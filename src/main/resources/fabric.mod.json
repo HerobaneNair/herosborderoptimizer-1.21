@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "herosborderoptimizer",
+	"version": "${version}",
+	"name": "HerosBorderOptimizer",
+	"description": "Reverts not being able to place a block on a block the world border intersects. (Used to do this in 1.20)",
+	"authors": [
+		"HerobaneNair",
+		"HerobaneNair (again)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/herosborderoptimizer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+	},
+	"mixins": [
+		{
+			"config": "herosborderoptimizer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
